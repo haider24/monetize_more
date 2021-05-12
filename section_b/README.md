@@ -1,2 +1,2 @@
-# monetize_more
-Monetize More take home test
+monetize_more.ipynb is a Jupyter Notebook file. The notebook is also hosted as on Google Colab and can be accessed via the following URL:
+https://colab.research.google.com/drive/1lkMxsi6NvF4k-zl0jwTeE5Aphhb-7jSl?usp=sharing
