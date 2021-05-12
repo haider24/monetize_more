@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: es-ingestion
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      containers:
+      - name: es-ingestion
+        image: ingest_data
+        env:
+          - name: ES_HOST
+            value: https://5a0fb5860310.ngrok.io/
+        imagePullPolicy: Never
+      restartPolicy: Never
+
