@@ -12,4 +12,7 @@ The application code resides in the app/ directory. The contents of app/ directo
     - Bash script that builds the application image. The application was tested on [minikube](https://minikube.sigs.k8s.io/docs/start/) which provides a local kubernetes environment for testing and development purposes. The line eval "$(minikube docker-env)" in the bash script makes sure that the minikube cluster gets the Docker image from local machine rather than try to pull from DockerHub
 
 
-##### Note: The application reads Elasticsearch endpoint from the "ES_HOST" environment variable
+###### Note: The application reads Elasticsearch endpoint from the "ES_ENDPOINT" environment variable
+
+## Kubernetes Deployment
+The file "ingestion_job.yaml" contains the Kubernetes deployment configuration. The application is deployed on Kubernetes in the form of a [Kubernetes Job](https://kubernetes.io/docs/concepts/workloads/controllers/job/). The job contains ES_HOST as environment variable.
