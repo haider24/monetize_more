@@ -14,7 +14,7 @@ if __name__ == "__main__":
     
     dataset = read_data()
     
-    bulk_data = (Bid(**row).to_dict(True) for row in json_dataset)
+    bulk_data = (Bid(**row).to_dict(True) for row in dataset)
 
     response = bulk(
         connections.get_connection(),
