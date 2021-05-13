@@ -3,7 +3,7 @@
 
 
 ## Application
-The application code resides in the app/ directory. The contents of app/ directory along with their details are listed below:
+The details of the importtant application code files listed below:
 - bid.py
     - Contains the data schema as the Bid class. [elasticsearch-dsl](https://github.com/elastic/elasticsearch-dsl-py) python lobrary is used which allows defining documents as Python objects.
 - driver.py
